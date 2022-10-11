@@ -1,91 +1,109 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Paige Johnson-SuppTutorials</title>
+  	<title>cyPutnam_DesignSystemExample_Index</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="This website displays ...." name="description">
 
     <!-- This is where you put your google font in if applicable -->
-<!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> 
-
-class="navbar navbar-dark bg-dark"
-
-
--->
+<!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> -->
 
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<link rel="stylesheet" href="css/cpages.css">
-	
+	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Paige Johnson</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="design/design.html">Design</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Research
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="research/research1.html">Project 1</a></li>
-            <li><a class="dropdown-item" href="#">Project 2</a></li>
-            <li><a class="dropdown-item" href="#">Project 3</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+		
+		<div class="d-flex">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="toggle-btn">
+	    				<span class="sr-only"></span>
+	          				<div id="nav-icon1" >
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							</div>
+	       			 </button>
+        	</div>
+		<div class="p-4 pt-6">
+		  <h1><a href="index.html" class="logo">Your Logo</a></h1>
 
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="imgs/Image1.png" class="d-block w-100" alt="Generic Banner Image 1">
-    </div>
-    <div class="carousel-item">
-      <img src="imgs/Image2.png" class="d-block w-100" alt="Generic Banner Image 2">
-    </div>
-    <div class="carousel-item">
-      <img src="imgs/Image3.jpg" class="d-block w-100" alt="Generic Banner Image 3">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+	       <ul class="list-unstyled components">
+	     
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="foundation/type.html">Type Hierarchy 1</a>
+                </li>
+                <li>
+                    <a href="foundation/color.html">Type Hierarchy 2</a>
+                </li>
+                <li>
+                    <a href="foundation/logo.html">Type Hierarchy 3</a>
+                </li>
+	            </ul>
+	          </li>
+	          
+	          <li>
+              <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+              <ul class="collapse list-unstyled" id="ComponentsSubmenu">
+                <li>
+                    <a href="components/component1.html">Comp-1-label</a>
+                </li>
+                <li>
+                    <a href="components/component2.html">Comp-2-label</a>
+                </li>
+                <li>
+                    <a href="components/component3.html">Comp-3-label</a>
+                </li>
+              </ul>
+	          </li>
+
+	          <li>
+              <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+              <ul class="collapse list-unstyled" id="PatternsSubmenu">
+                <li>
+                    <a href="patterns/pattern1.html">Pattern-1-label</a>
+                </li>
+                <li>
+                    <a href="patterns/pattern2.html">Pattern-2-label</a>
+                </li>
+               
+              </ul>
+	          </li>
+	         
+	         
+	        </ul> 
+
+	      
 
 
-<div class="container homepage">
-  <div class="row">
-    <div class="col-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis odio feugiat odio rhoncus, at tempus ipsum euismod. Nullam condimentum nulla ex, nec sagittis urna mollis a. Aliquam diam ex, mollis in hendrerit in, aliquet ut purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi in suscipit leo, in tristique arcu. Donec at volutpat quam. Curabitur volutpat molestie urna eu interdum. Suspendisse eu euismod risus, vitae sollicitudin eros. Cras molestie lacus vel turpis porttitor, malesuada facilisis risus scelerisque. Fusce lectus risus, dictum quis magna eget, commodo iaculis enim.</div>
-    <div class="col-md">Nulla elit risus, maximus vitae dui in, tincidunt consequat dui. Etiam ac lorem vulputate, vestibulum erat sit amet, dictum nibh. Curabitur convallis lobortis dolor. Quisque posuere nunc at ipsum aliquet, vel maximus mi ornare. Mauris in velit viverra, dignissim turpis a, tincidunt nibh. Aliquam convallis posuere scelerisque. Quisque viverra convallis nisi, nec convallis neque mollis a. Aenean imperdiet massa at odio blandit, id gravida augue accumsan. Sed purus nisl, ultricies eget euismod in, commodo non lacus. Vestibulum eu blandit ligula.</div>
-  </div>
-</div>
+	      </div>
+    	</nav>
 
-<div class = "footer">
-  Copyright Paige Johnson | Last Updated Autumn 2022
-</div>
+        <!-- Page Content  -->
+        <div class = "container">
+          <div class = "row p-5 pt-6">
+            <div id="content">
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    </body>
-  
+              <h2>Intro page</h2>
+              <p>Do a blurb about your system here - and include your adjectives from the mind map exercise. Consider a meaninful image(s). See posted student examples.  </p>
+    		             
+    		      <p>The categories of Foundation, Components and Patterns are not set in stone. Use whatever categories makes sense for your system. Look at multiple systems to see how they categorize. Note, that we are not going in the detail of design tokens in this assignment. </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>      <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+		</div><!-- d flex -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>
