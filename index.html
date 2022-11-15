@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Paige Johnson Design</title>
-      <link rel="icon" type="image/x-icon" href="img/Favicon1.png">
-
+  	<title>Paige Johnson's Design System</title>
+    <link rel="shortcut icon" type="image/png" href="img/Logo.png"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="description" content="This website displays ...." name="description">
 
     <!-- This is where you put your google font in if applicable -->
@@ -31,12 +29,57 @@
 	       			 </button>
         	</div>
 		<div class="p-4 pt-6">
-		  <h1><a href="index.html" class="logo">Paige Johnson</a></h1>
+		  <h1><a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a></h1>
 
-	       <ul>
-	          <li>
-	            <a href="index.html">Logo Designs</a>
+	       <ul class="list-unstyled components">
+	     
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="foundation/type.html">Typography</a>
+                </li>
+                <li>
+                    <a href="foundation/color.html">Color</a>
+                </li>
+                <li>
+                    <a href="foundation/logo.html">Logo</a>
+                </li>
+	            </ul>
 	          </li>
+	          
+	          <li>
+              <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+              <ul class="collapse list-unstyled" id="ComponentsSubmenu">
+                <li>
+                    <a href="components/component1.html">Navigation Bars</a>
+                </li>
+                <li>
+                    <a href="components/component2.html">Footers</a>
+                </li>
+                <li>
+                    <a href="components/component3.html">Cards</a>
+                </li>
+                <li>
+                    <a href="components/component4.html">Images</a>
+                </li>
+              </ul> 
+	          </li>
+
+	          <li>
+              <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+              <ul class="collapse list-unstyled" id="PatternsSubmenu">
+                <li>
+                    <a href="patterns/pattern1.html">Homepage</a>
+                </li>
+                <li>
+                    <a href="patterns/pattern2.html">Work Page</a>
+                </li>
+               
+              </ul>
+	          </li>
+	         
+	         
 	        </ul> 
 
 	      
@@ -50,44 +93,32 @@
           <div class = "row p-5 pt-6">
             <div id="content">
 
-              <h2>Polished Logo Designs</h2>
+              <h1>Paige Johnson Portfolio Design System</h1>
+              <br>
+              <br>
 
-                <h4>Favicons</h4>
-                    <img src="img/Favicon1.png" height="100px" width="100px">
-                     <img src="img/Favicon2.png" height="100px" width="100px">
-                    <p>Here I have included the classic black and white favicon, as well as the reverse black and white so there are different options depending on whether the background is light or dark.</p>
+              <img src="img/Headshot.png" alt="Headshot" width="180" height="180" align="left" hspace="10" vspace="10"> 
+              <h2>About this Design System</h2>
+               <p>This website provides documentation for the design system used to style my portfolio website. This design system was created to support and display my portfolio website content, in addition to showcasing my design skills as a curious, compassionate, and concise UX designer.</p>
 
-              <div class="row">
-                    <div class="column">
-                        <h4>Black & White</h4>
-                        <img src="img/B&W.png" height="350px" width="350px">
-                        <p>This logo is used in mediums that require contrast. It can also be used to establish a more serious tone depending on what message needs to be portrayed.</p>
-                </div>
-                   
-                    <div class="column">
-                        <h4>Color</h4>
-                        <img src="img/Color.png" height="350px" width="350px">
-                        <p>This logo is for more than just aesthetic appeal. Colors help brands connect with consumers on a deeper psychological level. By selecting a brand's color palette, you also select the emotions and associations you're seeking to evoke.</p>
-                    </div>
+<br>
+<br>
+<br>
+<br>
+    		  <h3>Foundations</h3>
+              <p>This section outlines guidelines for correct usage of elements of the typographical hierarchy, color palette, and logo set.</p>
 
-                <div class="column">
-                    <h4>Reverse</h4>
-                        <img src="img/Reverse.png" height="350px" width="350px">
-                        <p>The reverse black and white can be best utilized where a darker background is being used and the white text really stands out.</p>
-                 </div>
+              <h3>Components</h3>
+              <p>This section outlines components used to build the portfolio website including navihation bars, footers, cards, graphical elements, and images.</p>
 
-            </div>
-
-
-
-
-
+              <h3>Patterns</h3>
+              <p>This section outlines page layouts used within the portfolio website. Two page patterns are offered at three different sizes.</p>
 
 
         </div>      <!-- Content  -->
-      </div><!-- Row  -->
-    </div><!-- Container -->
-		</div><!-- d flex -->
+      </div> <!-- Row  -->
+    </div> <!-- Container -->
+		</div> <!-- d flex -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
