@@ -446,6 +446,11 @@ i {
     background-color: var(--maroon);
 }
 
+tr, td, th {
+    padding: 10px;
+    border: 1px solid var(--charcoal);
+}
+
 
 @media (max-width: 991.98px) {
 #work1 {
@@ -544,12 +549,14 @@ i {
 /* ABOUT */
 /* About Hero */
 .arch {
+    margin: auto;
     border: 1px solid var(--charcoal);
-    border-radius: 50%;
-    height: 700px;
+    border-radius: 0%;
+    height: 400px;
+    width: 100%;
     max-height: 50vw;
     background-image: url('../img/headshot.png');
-    background-size: cover;
+    background-size: 90%;
     background-position: center;
 }
 
@@ -561,6 +568,7 @@ i {
     .arch {
         max-height: 50vh !important;
         border-bottom: 1px solid var(--charcoal) !important;
+        background-size: cover;
     }
 
     #cvIntro {
@@ -594,7 +602,7 @@ i {
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C9460E'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238d264d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .accordion-button.collapsed:hover {
@@ -603,7 +611,7 @@ i {
 }
 
 .accordion-button.collapsed:hover::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C9460E'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238d264d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .accordion-button:focus {
