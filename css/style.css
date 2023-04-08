@@ -343,7 +343,6 @@ i {
 .lnk-secondary:after {
     content: '';
     position: absolute;
-    width: 100%;
     transform: scaleX(0);
     height: 0.05rem;
     bottom: 0;
@@ -396,6 +395,10 @@ i {
     padding-right: 5px;  
 }
 
+a:hover.description {
+    color: #FF4185;
+    font-style: italic;
+}
 
 @media (max-width: 991.98px) {
 #hero {
