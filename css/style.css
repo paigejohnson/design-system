@@ -349,7 +349,8 @@ i {
 }
 
 .lnk-secondary:hover {
-    text-decoration: underline;
+        border-bottom: 1px solid var(--maroon); 
+        padding-bottom: 3px;
 }
 
 .lnk-secondary:after {
@@ -408,12 +409,17 @@ i {
 }
 
 .cardDisplay h3 {
-    padding: 10px 0 15px 0;
+    padding: 5px 0 0 0;
 }
 
 .cardDisplay img {
     border: 1px solid var(--charcoal);
     border-radius: 0;
+    background-color: var(--maroon);
+}
+
+.cardDisplay img:hover {
+    opacity: 0.75;
 }
 
 @media (min-width: 845px) {
