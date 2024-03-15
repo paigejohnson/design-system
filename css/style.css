@@ -164,6 +164,14 @@ small {
     }
 }
 
+@media (max-width: 845px) {
+    .eyebrow {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /* ICONS */
 @font-face {
@@ -335,9 +343,13 @@ i {
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.059rem;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     display: inline-block;
     position: relative;
+}
+
+.lnk-secondary:hover {
+    text-decoration: underline;
 }
 
 .lnk-secondary:after {
@@ -357,6 +369,14 @@ i {
     transform-origin: bottom left;
 }
 
+@media (max-width: 845px) {
+    .lnk-secondary {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /* HOMEPAGE */
 .intro {
@@ -372,54 +392,55 @@ i {
     border-right: 1px solid var(--charcoal);
 }
 
-.projects {
-    padding-right: 80px;
-    padding-left: 80px;
+/* Cards */
+.cardDisplay {
+    border: none;
+    background-color: transparent;
 }
 
-.project {
-    margin: auto;
-    display: block;
-    padding: 5px;
+.card.cardDisplay {
+    border: none;
 }
 
-.project:hover {
-    transform: scale(1.01);
+.cardDisplay .card-body {
+    border: none;
+    padding: 25px 10px;
 }
 
-.description {
-    margin: auto;
-    display: block;
-    width: 100%;
-    padding-left: 5px;  
-    padding-right: 5px;  
+.cardDisplay h3 {
+    padding: 10px 0 15px 0;
 }
 
-a:hover.description {
-    color: #FF4185;
-    font-style: italic;
+.cardDisplay img {
+    border: 1px solid var(--charcoal);
+    border-radius: 0;
 }
 
-@media (max-width: 991.98px) {
-#hero {
-    border-right: 0;
-    max-height: 40vh !important;
-    border-bottom: 1px solid var(--charcoal);
+@media (min-width: 845px) {
+    .col-mdlg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 50px 0 50px;
+    }
 }
 
-.projects {
-    padding-right: 0px;
-    padding-left: 0px;
+@media (max-width: 845px) {
+    .cardDisplay .card-body h3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cardDisplay img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 }
 
-.project {
-    width: 70%;
-}
-
-.description {
-    width: 70%;
-}
-}
 
 
 /*WORK PAGES 1,2,3*/
